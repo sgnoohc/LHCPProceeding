@@ -21,9 +21,18 @@
 \newcommand\pubblock{\rightline{\begin{tabular}{l} Proceedings of the Seventh Annual LHCP\\ \pubnumber\\
          \pubdate  \end{tabular}}}
 
-\newenvironment{Abstract}{\begin{quotation} \begin{center} 
-             \large ABSTRACT \end{center}\bigskip 
-      \begin{center}\begin{large}}{\end{large}\end{center} \end{quotation}}
+\newenvironment{Abstract}{
+\begin{quotation}
+\begin{center} 
+\large ABSTRACT \end{center}
+\bigskip 
+\begin{large}}
+{
+\end{large}
+\end{quotation}
+}
+% \begin{center}
+% \end{center}
 
 \newenvironment{Presented}{\begin{quotation} \begin{center} 
              PRESENTED AT\end{center}\bigskip 
@@ -64,9 +73,8 @@
 
 %%  Affiliation
 \def\affiliation{
-On behalf of the ATLAS and CMS Collaborations, \\
-Department of Physics \\
-University of California San Diego, San Diego, CA 92093, U.S.A }
+Department of Physics, University of California San Diego\\
+9500 Gilman Drive, La Jolla, CA 92093, U.S.A }
 
 %% Acknowledge the support
 \def\support{\footnote{Work supported by  XYZ Foundation }}
@@ -84,17 +92,25 @@ University of California San Diego, San Diego, CA 92093, U.S.A }
 %% Change the title, name, abstract
 %% Title 
 \vfill
-\Title{ Rare EW multiboson at LHC }
+\Title{STUDIES OF RARE ELECTROWEAK MULTIBOSON INTERACTIONS AT THE LHC}
 \vfill
 
 %  if you need to add the support use this, fill the \support definition above. 
 %   \Author{ FIRSTNAME LASTNAME \support }
-\Author{ Philip Chang  }
+% \Author{ Philip Chang  }
+{\begin{center}{ P. CHANG}\\
+On behalf of the ATLAS and CMS Collaborations,
+    \end{center}
+}
+% {\center
+% On behalf of the ATLAS and CMS Collaborations, \\
+% }
 \Address{\affiliation}
 \vfill
 \begin{Abstract}
-
 We present a summary of the current status of measurements in multiboson final states at the LHC from the ATLAS and CMS experiments.
+Studying the rare productions of electroweak multibosons at the LHC can probe new physics beyond the energy reach of the LHC.
+Various searches for rare productions of diboson and triboson are presented and their impacts to the constraints on new physics in the framework of Standard Model Effective Field Theory are also discussed.
 
 \end{Abstract}
 \vfill
@@ -119,52 +135,114 @@ May 20-25, 2019
 
 \section{Introduction}
 
-HERE IS YOUR INTRODUCTION, REPLACE THE TEXT
 
-The program will be devoted to a review of the latest experimental and theoretical results on hadron collider physics and a discussion on the outlook for the coming years. The conference intends to provide a lively discussion between experimenters and theorists on topics such as the Standard Model Physics and Beyond, the Higgs Boson, Supersymmetry and Heavy Ion Physics and planning for the high luminosity upgrades.
+During Run 1 of the CERN LHC data taking, a new particle consistent with the Higgs boson of the Standard Model (SM) was discovered \cite{Aad:2012tfa,Chatrchyan:2012ufa}.
+The consistency of the new particle with the SM prediction implied that there may be new physics at or around the electroweak scale.
+As the Run 2 of the LHC started, the collision energy was significantly increased allowing for better reach for new physics and many direct searches have been performed with the Run 2 data.
+However, so far no hints of direct evidence of new physics have been seen yet \cite{}.
 
-\section{Observations}
+The new physics could be evading our current searches for a few reasons.
+The new physics may be just beyond our current constraints in which case most likely will be conformed with the Run 3 data.
+It could also be that the new physics produce signatures that closely resemble known SM processes but with small rate and therefore becomes difficult in detecting.
+Lastly, it is also possible that the new physics is simply beyond the energy reach of the LHC.
 
-REPLACE THE TEXT, FIGURE and TABLE.
+If the new physics is beyond the energy reach of the LHC, one may see its effect not through a direct production a new resonance but rather through new interactions between known SM particles \cite{}.
+These new interactions manifest as higher dimensional operators constructed out of the SM fields.
+There are multitudes of possible higher dimensional operators and a set of handful of interesting operators have been put together in the framework called the SM Effective Field Theory (SMEFT)\cite{}.
 
-Observation of the Higgs Boson,  \cite{Aad:2012tfa},\cite{Chatrchyan:2012ufa}. 
+% Slide 4
+Studies of multiboson interactions serve as an excellent testing ground for variosu higher dimensional operators.
+As an example, 
+% As an example the Figure shows an effect from the operator of the following blah blah 
+
+% Slide 5
+There are many multiboson final states available to be probed.
+Many results exist
+% Talk about the meaning of "RARE" 
+
+% Slide 6
+Reasons for semi-leptonic final states
+
+% Slide 7
+Leptonic final states
+
+% Slide 8
+CMS semi-leptonic final states
+
+% Slide 9
+ATLAS semi-leptonic final states
+
+% Slide 10
+WV semi-leptonic
+
+% Slide 11
+VBF W (not "multiboson")
+
+% Slide 12
+Triboson
+
+% Slide 13
+WWW
+
+% Slide 14 / 15
+WWZ/ZZZ
+
+% Future
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\section{Observations}
+
+%REPLACE THE TEXT, FIGURE and TABLE.
+
+%Observation of the Higgs Boson,  \cite{Aad:2012tfa},\cite{Chatrchyan:2012ufa}. 
 
  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%%   use this format to include an .eps figure into your paper
-%%
-\begin{figure}[htb]
-\centering
-% \includegraphics[height=2in]{head_lhcp2014.jpg}
-\caption{ Place the caption here}
-\label{fig:figure1}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%   use this format to include an .eps figure into your paper
+%%%
+%\begin{figure}[htb]
+%\centering
+%% \includegraphics[height=2in]{head_lhcp2014.jpg}
+%\caption{ Place the caption here}
+%\label{fig:figure1}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-See Figure \ref{fig:figure1} and Table \ref{tab:table1}. 
+%See Figure \ref{fig:figure1} and Table \ref{tab:table1}. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%%   use this format to include a LaTeX table  into your paper
-%%
-\begin{table}[t]
-\begin{center}
-\begin{tabular}{l|ccc}  
-Patient &  Initial level($\mu$g/cc) &  w. Magnet &  
-w. Magnet and Sound \\ \hline
- Guglielmo B.  &   0.12     &     0.10      &     0.001  \\
- Ferrando di N. &  0.15     &     0.11      &  $< 0.0005$ \\ \hline
-\end{tabular}
-\caption{ place the caption here }
-\label{tab:table1}
-\end{center}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%   use this format to include a LaTeX table  into your paper
+%%%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{l|ccc}  
+%Patient &  Initial level($\mu$g/cc) &  w. Magnet &  
+%w. Magnet and Sound \\ \hline
+% Guglielmo B.  &   0.12     &     0.10      &     0.001  \\
+% Ferrando di N. &  0.15     &     0.11      &  $< 0.0005$ \\ \hline
+%\end{tabular}
+%\caption{ place the caption here }
+%\label{tab:table1}
+%\end{center}
+%\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Interpretations}
+%\section{Interpretations}
 
-The conference banquet will be hosted at the Spirit of New York, dinner while on a three-hour cruise around Manhattan. Enjoy an evening of most entertaining and unique combination of dining, dancing, entertainment and views on New York Harbor. Registered attendees and accompanying guests are invited to attend. 
+%The conference banquet will be hosted at the Spirit of New York, dinner while on a three-hour cruise around Manhattan. Enjoy an evening of most entertaining and unique combination of dining, dancing, entertainment and views on New York Harbor. Registered attendees and accompanying guests are invited to attend. 
 
 
 \section{Conclusions}
