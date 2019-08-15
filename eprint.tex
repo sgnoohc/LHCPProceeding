@@ -7,6 +7,9 @@
 
 \documentclass[10pt]{article}
 \usepackage{graphicx}
+\usepackage{caption}
+% \usepackage{subcaption}
+\usepackage[subrefformat=parens,labelformat=parens]{subfig}
 
 
 
@@ -146,7 +149,22 @@ It could also be that the new physics produce signatures that closely resemble k
 Lastly, it is also possible that the new physics is simply beyond the energy reach of the LHC.
 If the new physics is beyond the energy reach of the LHC, then it will not be possible to directly produce a new particle at the LHC.
 Instead, the effects from the new physics will manifest in the data through new interactions between known SM particles \cite{}.
-This is illustrated in Figure~\ref{fig:TailIllustration} where the new degrees of freedom from a BSM model with mass $m_{X}$ that is larger than the LHC's collision energy $E_{\tiny\textrm{LHC}}$ is integrated out leaving only the interaction between known SM fields.
+This is illustrated in Figure~\subref*{fig:TailIllustration} where the new degrees of freedom from a BSM model with mass $m_{X}$ that is larger than the LHC's collision energy $E_{\tiny\textrm{LHC}}$ is integrated out leaving only the interaction between known SM fields.
+
+\begin{figure}[htb]
+\centering
+    \subfloat[When $m_{X} > E_{\tiny\textrm{LHC}}$ BSM effects show up in the tails instead of as a new resonance.]{
+        \label{fig:TailIllustration}
+        \includegraphics[height=2.4in]{TailIllustration.pdf}
+        }
+    \quad\quad
+    \subfloat[SMEFT higher dimensional operators affecting high energy tails. Figure from \cite{} is taken to create the cartoon.]{
+        \label{fig:SMEFTIllustration}
+        \includegraphics[height=2.4in]{SMEFTIllustration.pdf}
+        }
+\caption{Cartoon of BSM effects in the tails}
+\label{fig:BSMTails}
+\end{figure}
 
 These possible new interactions can be systematically described by a framework called the SM Effective Field Theory (SMEFT) \cite{}.
 In this framework, a set of higher dimensional operators constructed out of known SM fields are put together.
@@ -163,7 +181,7 @@ As an example, a dimension-8 operator of the type,
 \end{equation}
 can lead to modifications in the distribution of the transverse mass of the $WZ$ system in the $pp\to WZjj$ process.
 % increase in the tail distribution of the transverse mass of the $WZ$ system in the $pp\to WZjj$ process.
-This can be seen from the Figure~\ref{fig:SMEFTIllustration} where the modification to the $m_{T,WZ}$ distribution from the $O_{T2}$ operator is highlighted in dashed green line.
+This can be seen from the Figure~\subref*{fig:SMEFTIllustration} where the modification to the $m_{T,WZ}$ distribution from the $O_{T2}$ operator is highlighted in dashed green line.
 The effects are most visible in the \emph{rare} events in the tail with high energy and hence measuring the tail of such distributions can indirectly probe BSM physics.
 Although not easily visible, the bulk distribution also gets modified but with a lesser degree.
 Therefore, if a process at hand has a small cross section, simply observing the \emph{rare} process can also indirectly probe BSM physics.
@@ -174,15 +192,22 @@ This proceeding will cover some of the recent highlights presented at the LHCP 2
 \section{Studies of multiboson interactions in semi-leptonic final states}
 
 In general SM processes with multiboson interactions have small cross sections due to electroweak coupling constants.
-Searches with fully leptonic decay of the $VV$ ($V=W$ or $Z$) processes, therefore, have cleaner signature with better sensitivity.
-In fully leptonic final states, often the process with the highest cross section is the signal itself, or other $VV$ processes with relatively comparable cross section.
+Searches with fully-leptonic decay of the $VV$ ($V=W$ or $Z$) processes, therefore, have cleaner signature with better sensitivity.
+In fully-leptonic final states, often the process with the highest cross section is the signal itself, or other $VV$ processes with relatively comparable cross section.
 Final states with semi-leptonic decay of the $VV$ processes, on the other hand, have SM backgrounds from $V+$jets production, which have much higher cross section, making it difficult to dig out the $VV$ signal process from the large $V+$jets background.
 
 When considering BSM effects from higher dimensional operators, the picture changes.
-Due to the smaller branching ratio of the $V$ bosons to leptonic final states, the number of expected high energy tail events for the fully leptonic final states is significantly lower than that of the semi-leptonic final states.
+Due to the smaller branching ratio of the $V$ bosons to leptonic final states, the number of expected high energy tail events for the fully-leptonic final states is significantly lower than that of the semi-leptonic final states.
 In conjunction with the fact that the BSM effects can have a sizable enhancement at the tail of the distributions, studying the semi-leptonic final states can probe the BSM effects much further in the tail.
 This is illustrated in Figure~\ref{fig:SemiLeptonicIllustration}.
 The leptonic final states searches for rare diboson processes have already either established an observation ($>5\sigma$) or an evidence ($>3\sigma$) for the bulk distributions for various different $VV+X$ processes \cite{}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[height=2.0in]{SemiLeptonic.pdf}
+\caption{Illustrating the complementarity between fully-leptonic and semi-leptonic final states.}
+\label{fig:SemiLeptonicIllustration}
+\end{figure}
 
 \subsection{Studies of vector boson scattering processes in semi-leptonic final states}
 
@@ -191,7 +216,7 @@ The analysis targets signals produced via vector boson scattering (VBS).
 The VBS processes have a characteristic signature where the accompanying jets (VBS jets) form a large invariant mass with a larger rapidity gap;
 This search uses boosted techniques to tag the highly energetic hadronically decaying $V$ boson merging into a single fat-jet $J$.
 The analysis was performed in one or two lepton final states targetting the processes such as $WV\to \ell\nu J$ or $ZV\to \ell\ell J$.
-Figure~\ref{fig:CMSVBSWV} shows the invariant mass of the $WV\to\ell\nu J$ system.
+Figure~\subref*{fig:CMSVBSWV} shows the invariant mass of the $WV\to\ell\nu J$ system.
 The BSM enhancement to the SM expectation is shown in the dashed line histograms.
 Although the single $V+$jets processes at the bulk is very large as discussed previously, in the tail of the distribution with high invariant mass of the $WV$ system, the BSM signal has non-zero expected yields and has a rate larger than that of the $V+$jets background.
 This analysis placed limits on the higher dimensional operators (specifically the dimension-8 operators) and has one of the most stringent limits to date.
@@ -200,11 +225,26 @@ Similar search has been done in ATLAS experiment as well \cite{}.
 ATLAS analysis has targetted not only the tail of the distribution with merged fat-jet, but also the cases where the hadronically decaying $V$ leaves two resolved jets signature.
 The analysis also targets one or two lepton final states, but in addition it also targets zero lepton final states, where it targets $ZV\to \nu\nu J$ events.
 Dedicated boosted decision tree (BDT) has been trained to enhance sensitivity to the rare signal over large $V+$jets background.
-Figure~\ref{fig:ATLASVBSWV} shows the BDT distribution for the two lepton plus a fat-jet final state.
+Figure~\subref*{fig:ATLASVBSWV} shows the BDT distribution for the two lepton plus a fat-jet final state.
 This analysis also uses novel techniques designed to separate quark vs. gluon initiated jets.
 This is particularly useful as the large $V+$jets backgrounds can be accompanied by both quark or gluon initiated jets while signal process events always contain only four quark initiated jets.
 The signal regions are split into 9 different regions and the respective BDT distribution in each regions are fitted simultaneously to extract the signal.
 The observed and expected sensitivity is 2.7$\sigma$ and 2.5$\sigma$ respectively.
+
+\begin{figure}[htb]
+\centering
+    \subfloat[]{
+        \label{fig:CMSVBSWV}
+        \includegraphics[height=2.4in]{CMS-SMP-18-006_Figure_004-a.pdf}
+        }
+    \quad\quad
+    \subfloat[]{
+        \label{fig:ATLASVBSWV}
+        \includegraphics[height=2.4in]{fig_06a.pdf}
+        }
+\caption{Cartoon of BSM effects in the tails}
+\label{fig:BSMTails}
+\end{figure}
 
 \subsection{Studies of diboson processes in semi-leptonic final states}
 \label{sec:CMSWV}
@@ -212,11 +252,40 @@ The observed and expected sensitivity is 2.7$\sigma$ and 2.5$\sigma$ respectivel
 CMS experiment also performed a search in semi-leptonic final states of diboson production involving triple gauge couplings (TGCs).
 The signal process is $pp\to VV$ without any VBS jets.
 The analysis also utilizes boosted techniques to tag the merged fat-jet from a hadronically decaying $V$ boson.
-Figure~\ref{fig:CMSWV} shows the invariant mass distribution of the $pp\to WV\to e\nu J$ system.
+Figure~\subref*{fig:CMSWV} shows the invariant mass distribution of the $pp\to WV\to e\nu J$ system.
 Although the actual $pp\to WV$ process is well below the very large $W+$jets background process, starting around $m_{WV} > 2.5$~TeV the BSM effects from the higher dimensional operators become dominant over the $W+$jets.
-Both the signal and the background distributions are parametrized using a series of exponential function and fitted simultaneously to extract limits on the anomalous triple gauge couplings (aTGCs).
-The analysis is not sensitive to the SM rate of the $WV$ boson over a large $W+$jets background but places the most stringent limits on the aTGCs to date.
-The limits to the aTGCs are shown in Table~\ref{tab:CMSWVLimits}.
+Both the signal and the background distributions are parametrized using a series of exponential function and fitted simultaneously to extract limits on the dimension-6 operators (viz. $\mathcal{O}_{WWW}$, $\mathcal{O}_{W}$, and $\mathcal{O}_{B}$).
+The analysis is not sensitive to the SM rate of the $WV$ boson over a large $W+$jets background but places the most stringent limits on some of the dimension-6 operators to date.
+The limits to the coefficients of the dimension-6 operators (represented as $c_{i} / \Lambda^2$) are shown in Table~\ref{tab:CMSWVLimits}.
+Deviations from zero indicate new physics, and the result is consistent with the SM.
+
+\begin{figure}[htb]
+\centering
+    \subfloat[]{
+        \label{fig:CMSWV}
+        \includegraphics[height=2.2in]{CMS-SMP-18-008_Figure_004-c.pdf}
+        }
+    \quad\quad
+    \subfloat[]{
+        \label{fig:VBFWPtl}
+        \includegraphics[height=2.2in]{CMS-SMP-17-011_Figure_010-a.pdf}
+        }
+\caption{}
+\label{fig:BSMTails}
+\end{figure}
+
+\begin{table}[t]
+\begin{center}
+\caption{}
+\label{tab:CMSWVLimits}
+\begin{tabular}{l|ccc}  
+Operator coefficients & Expected limit & Observed limit & Observed best-fit \\ \hline
+$c_{WWW} / \Lambda^2$ & [-1.44,1.47]   & [-1.58,1.59]   & -0.26  \\
+$c_{W} / \Lambda^2$   & [-2.45,2.08]   & [-2.00,2.65]   & 1.21   \\
+$c_{B} / \Lambda^2$   & [-8.38,8.06]   & [-8.78,8.54]   & 1.07   \\
+\end{tabular}
+\end{center}
+\end{table}
 
 \subsection{Single $W$ production via vector boson fusion}
 
@@ -230,12 +299,24 @@ A multivariate discriminant is trained using BDT method.
 This analysis also utilizes quark-gluon tagging technique in order to separate $W+$jets background from signal where the signal's VBF jets are always quark initiated jets.
 The final BDT discriminant is fitted to extract the signal.
 The analysis has established the signal with well over $>5\sigma$ significance.
-The analysis then bins the events by the transverse momentum of the leptons $p_{T,\ell}$ and extract limits on aTGCs.
-Figure~\ref{} shows the distribution of the $p_{T,\ell}$.
-The effects from the aTGCs are shown at the tail of the distribution as expected.
-The limits to the aTGCs are shown in Table~\ref{tab:CMSVBFWLimits}.
-In the case for the aTGC operator $\lambda_Z$, the constraint is comparable to the $pp \to WV$ analysis presented in Section~\ref{sec:CMSWV}, demonstrating complementarity between the two analyses.
+The analysis then bins the events by the transverse momentum of the leptons $p_{T,\ell}$ and extract limits on dimension-6 operators.
+Figure~\subref*{fig:VBFWPtl} shows the distribution of the $p_{T,\ell}$.
+The effects from the dimension-6 operators are shown at the tail of the distribution as expected.
+The limits to the dimension-6 operators are shown in Table~\ref{tab:CMSVBFWLimits}.
+In the case for the dimension-6 operators $\mathcal{O}_{WWW}$, the constraint is weaker but comparable to the $pp \to WV$ analysis presented in Section~\ref{sec:CMSWV}, demonstrating complementarity between the two analyses.
 
+\begin{table}[t]
+\begin{center}
+\caption{ place the caption here }
+\label{tab:CMSVBFWLimits}
+\begin{tabular}{l|cc}  
+Operator coefficients & Expected limit & Observed limit\\ \hline
+$c_{WWW} / \Lambda^2$ & [-2.5,2.5]     & [-2.3,2.5]    \\
+$c_{W} / \Lambda^2$   & [-16,19]       & [-8.8,1.6]    \\
+$c_{B} / \Lambda^2$   & [-62,61]       & [-45,46]      \\
+\end{tabular}
+\end{center}
+\end{table}
 \subsection{Triboson production}
 
 
@@ -276,7 +357,7 @@ WWZ/ZZZ
 %%%
 %\begin{figure}[htb]
 %\centering
-%% \includegraphics[height=2in]{head_lhcp2014.jpg}
+%% \includegraphics[height=2in]{TailIllustration.pdf}
 %\caption{ Place the caption here}
 %\label{fig:figure1}
 %\end{figure}
