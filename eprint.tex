@@ -127,7 +127,7 @@ May 20-25, 2019
 \end{Presented}
 \vfill
 \end{titlepage}
-\def\thefootnote{\fnsymbol{footnote}}
+\def\thefootnote{\arabic{footnote}}
 \setcounter{footnote}{0}
 %
 
@@ -141,14 +141,14 @@ May 20-25, 2019
 During Run 1 of the CERN LHC data taking, a new particle consistent with the Higgs boson of the Standard Model (SM) was discovered \cite{Aad:2012tfa,Chatrchyan:2012ufa}.
 The consistency of the new particle with the SM prediction implied that there may be new physics beyond the SM (BSM) at or around the electroweak scale.
 As the Run 2 of the LHC started, the collision energy was significantly increased allowing for better reach for new physics and many direct searches have been performed with the Run 2 data.
-However, so far no hints of direct evidence of new physics have been seen yet \cite{}.
+However, so far no hints of direct evidence of new physics have been seen yet\footnote{For complete exclusion summary see: https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CombinedSummaryPlots/ and http://cms-results.web.cern.ch/cms-results/public-results/publications/}.
 
 The new physics could be evading our current searches for a few reasons.
 The new physics may be just beyond our current constraints in which case most likely will be conformed with the Run 3 data.
 It could also be that the new physics produce signatures that closely resemble known SM processes but with small rate and therefore becomes difficult in detecting.
 Lastly, it is also possible that the new physics is simply beyond the energy reach of the LHC.
 If the new physics is beyond the energy reach of the LHC, then it will not be possible to directly produce a new particle at the LHC.
-Instead, the effects from the new physics will manifest in the data through new interactions between known SM particles \cite{}.
+Instead, the effects from the new physics will manifest in the data through new interactions between known SM particles \cite{Weinberg:1978kz,Weinberg:1979sa,Buchmuller:1985jz}.
 This is illustrated in Figure~\subref*{fig:TailIllustration} where the new degrees of freedom from a BSM model with mass $m_{X}$ that is larger than the LHC's collision energy $E_{\tiny\textrm{LHC}}$ is integrated out leaving only the interaction between known SM fields.
 
 \begin{figure}[htb]
@@ -158,7 +158,7 @@ This is illustrated in Figure~\subref*{fig:TailIllustration} where the new degre
         \includegraphics[height=2.4in]{TailIllustration.pdf}
         }
     \quad\quad
-    \subfloat[SMEFT higher dimensional operators affecting high energy tails. Figure from \cite{} is taken to create the cartoon.]{
+    \subfloat[SMEFT higher dimensional operators affecting high energy tails. Figure from \cite{Sirunyan:2019ksz} is taken to create the cartoon.]{
         \label{fig:SMEFTIllustration}
         \includegraphics[height=2.4in]{SMEFTIllustration.pdf}
         }
@@ -166,7 +166,7 @@ This is illustrated in Figure~\subref*{fig:TailIllustration} where the new degre
 \label{fig:BSMTails}
 \end{figure}
 
-These possible new interactions can be systematically described by a framework called the SM Effective Field Theory (SMEFT) \cite{}.
+These possible new interactions can be systematically described by a framework called the SM Effective Field Theory (SMEFT) \cite{deBlas:2017xtg}.
 In this framework, a set of higher dimensional operators constructed out of known SM fields are put together.
 If there is a non-zero effect from one or some of the higher dimensional operators the effects will show up in the data as a deviation from the SM prediction.
 Due to the dimensionality of these operators, the effects tend to be most pronounced in the tails of kinematic distributions, while the bulk of the kinematic distribution still roughly follows the SM prediction.
@@ -423,6 +423,52 @@ I am grateful to XYZ for fruitful discussions.
   %%CITATION = ARXIV:1207.7235;%%
   %2951 citations counted in INSPIRE as of 22 Jul 2014
 
+%\cite{Weinberg:1978kz}
+\bibitem{Weinberg:1978kz} 
+  S.~Weinberg,
+  %``Phenomenological Lagrangians,''
+  Physica A {\bf 96}, no. 1-2, 327 (1979).
+  doi:10.1016/0378-4371(79)90223-1
+  %%CITATION = doi:10.1016/0378-4371(79)90223-1;%%
+  %3256 citations counted in INSPIRE as of 16 Aug 2019
+
+%\cite{Weinberg:1979sa}
+\bibitem{Weinberg:1979sa} 
+  S.~Weinberg,
+  %``Baryon and Lepton Nonconserving Processes,''
+  Phys.\ Rev.\ Lett.\  {\bf 43}, 1566 (1979).
+  doi:10.1103/PhysRevLett.43.1566
+  %%CITATION = doi:10.1103/PhysRevLett.43.1566;%%
+  %1561 citations counted in INSPIRE as of 15 Aug 2019
+
+%\cite{Buchmuller:1985jz}
+\bibitem{Buchmuller:1985jz} 
+  W.~Buchmuller and D.~Wyler,
+  %``Effective Lagrangian Analysis of New Interactions and Flavor Conservation,''
+  Nucl.\ Phys.\ B {\bf 268}, 621 (1986).
+  doi:10.1016/0550-3213(86)90262-2
+  %%CITATION = doi:10.1016/0550-3213(86)90262-2;%%
+  %1563 citations counted in INSPIRE as of 15 Aug 2019
+
+%\cite{Sirunyan:2019ksz}
+\bibitem{Sirunyan:2019ksz} 
+  A.~M.~Sirunyan {\it et al.} [CMS Collaboration],
+  %``Measurement of electroweak WZ boson production and search for new physics in WZ + two jets events in pp collisions at $\sqrt{s} =$ 13TeV,''
+  Phys.\ Lett.\ B {\bf 795}, 281 (2019)
+  doi:10.1016/j.physletb.2019.05.042
+  [arXiv:1901.04060 [hep-ex]].
+  %%CITATION = doi:10.1016/j.physletb.2019.05.042;%%
+  %7 citations counted in INSPIRE as of 16 Aug 2019
+
+%\cite{deBlas:2017xtg}
+\bibitem{deBlas:2017xtg} 
+  J.~de Blas, J.~C.~Criado, M.~Perez-Victoria and J.~Santiago,
+  %``Effective description of general extensions of the Standard Model: the complete tree-level dictionary,''
+  JHEP {\bf 1803}, 109 (2018)
+  doi:10.1007/JHEP03(2018)109
+  [arXiv:1711.10391 [hep-ph]].
+  %%CITATION = doi:10.1007/JHEP03(2018)109;%%
+  %33 citations counted in INSPIRE as of 16 Aug 2019
 
 
 \end{thebibliography}
@@ -455,3 +501,132 @@ I am grateful to XYZ for fruitful discussions.
 
 % As an example the Figure shows an effect from the operator of the following blah blah 
 
+% VBS WW
+@article{Aad:2014zda,
+      author         = "Aad, Georges and others",
+      title          = "{Evidence for Electroweak Production of
+                        $W^{\pm}W^{\pm}jj$ in $pp$ Collisions at $\sqrt{s}=8$ TeV
+                        with the ATLAS Detector}",
+      collaboration  = "ATLAS",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "113",
+      year           = "2014",
+      number         = "14",
+      pages          = "141803",
+      doi            = "10.1103/PhysRevLett.113.141803",
+      eprint         = "1405.6241",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-079",
+      SLACcitation   = "%%CITATION = ARXIV:1405.6241;%%"
+}
+
+@article{Aaboud:2019nmv,
+      author         = "Aaboud, Morad and others",
+      title          = "{Observation of electroweak production of a same-sign $W$
+                        boson pair in association with two jets in $pp$ collisions
+                        at $\sqrt{s}=13$ TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2019",
+      eprint         = "1906.03203",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2019-008",
+      SLACcitation   = "%%CITATION = ARXIV:1906.03203;%%"
+}
+
+@article{Khachatryan:2014sta,
+      author         = "Khachatryan, Vardan and others",
+      title          = "{Study of vector boson scattering and search for new
+                        physics in events with two same-sign leptons and two
+                        jets}",
+      collaboration  = "CMS",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "114",
+      year           = "2015",
+      number         = "5",
+      pages          = "051801",
+      doi            = "10.1103/PhysRevLett.114.051801",
+      eprint         = "1410.6315",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-13-015, CERN-PH-EP-2014-250",
+      SLACcitation   = "%%CITATION = ARXIV:1410.6315;%%"
+}
+
+@article{Sirunyan:2017ret,
+      author         = "Sirunyan, Albert M and others",
+      title          = "{Observation of electroweak production of same-sign W
+                        boson pairs in the two jet and two same-sign lepton final
+                        state in proton-proton collisions at $\sqrt{s} = $ 13
+                        TeV}",
+      collaboration  = "CMS",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "120",
+      year           = "2018",
+      number         = "8",
+      pages          = "081801",
+      doi            = "10.1103/PhysRevLett.120.081801",
+      eprint         = "1709.05822",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-17-004, CERN-EP-2017-232",
+      SLACcitation   = "%%CITATION = ARXIV:1709.05822;%%"
+}
+
+% VBS WZ
+@article{Aad:2016ett,
+      author         = "Aad, Georges and others",
+      title          = "{Measurements of $W^\pm Z$ production cross sections in
+                        $pp$ collisions at $\sqrt{s} = 8$ TeV with the ATLAS
+                        detector and limits on anomalous gauge boson
+                        self-couplings}",
+      collaboration  = "ATLAS",
+      journal        = "Phys. Rev.",
+      volume         = "D93",
+      year           = "2016",
+      number         = "9",
+      pages          = "092004",
+      doi            = "10.1103/PhysRevD.93.092004",
+      eprint         = "1603.02151",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2016-017",
+      SLACcitation   = "%%CITATION = ARXIV:1603.02151;%%"
+}
+
+@article{Aaboud:2018ddq,
+      author         = "Aaboud, Morad and others",
+      title          = "{Observation of electroweak $W^{\pm}Z$ boson pair
+                        production in association with two jets in $pp$ collisions
+                        at $\sqrt{s} =$ 13 TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      journal        = "Phys. Lett.",
+      volume         = "B793",
+      year           = "2019",
+      pages          = "469-492",
+      doi            = "10.1016/j.physletb.2019.05.012",
+      eprint         = "1812.09740",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2018-286",
+      SLACcitation   = "%%CITATION = ARXIV:1812.09740;%%"
+}
+
+@article{Sirunyan:2019ksz,
+      author         = "Sirunyan, Albert M and others",
+      title          = "{Measurement of electroweak WZ boson production and
+                        search for new physics in WZ + two jets events in pp
+                        collisions at $\sqrt{s} =$ 13TeV}",
+      collaboration  = "CMS",
+      journal        = "Phys. Lett.",
+      volume         = "B795",
+      year           = "2019",
+      pages          = "281-307",
+      doi            = "10.1016/j.physletb.2019.05.042",
+      eprint         = "1901.04060",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-18-001, CERN-EP-2018-333",
+      SLACcitation   = "%%CITATION = ARXIV:1901.04060;%%"
+}
